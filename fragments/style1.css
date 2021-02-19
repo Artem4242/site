@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* .products {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 295px;
+    text-align: center;
+}
+
+.img_card {
+    max-width: 290px;
+}
+
+.price_card {
+    letter-spacing: 0;
+    color: #2b2a2a;
+    font-weight: 400;
+}
+
+.price_card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.price_card p {
+    font-size: 14;
+    line-height: 25px;
+    font-weight: 700;
+}
+ */
+
+
+
+.news_container{
+    display: flex;
+    justify-content: center;
+}
+.news_block {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+.news_card {
+    width: 35%;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.news_link_img {
+    background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+    overflow: hidden;
+}
+
+.news_img_icon {
+    position: absolute;
+    margin: 0 auto;
+    transform: translate(700%, -450%);
+    font-size: 32px;
+    color: rgb(236, 236, 236);
+    /* bottom: 80%;
+    left: 48%; */
+    opacity: 0;
+}
+
+.news_link_img .news_img {
+    opacity: 1;
+    transition: opacity 124ms linear, transform 124ms linear;  /* Плавное изменение прозрачности и увеличения */
+    width: 100%;
+    display: block;  /*  Убираем полосу под картинкий  */
+}
+
+.news_card:hover .news_link_img .news_img{
+    opacity: 0.6;  /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+}
+
+.news_card:hover .news_img_icon{
+    opacity: 1;
+    transition: 0.9s;
+}
+
+.news_content {
+    width: 450px;
+    padding-top: 10px;
+}
+
+.news_title {
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.news_title:hover {
+    color: rgb(39, 39, 39);
+}
+
+.news_text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+    padding-top: 10px;
+    color: gray;
+}
+
+.news_read-more {
+    margin-top: 10px;
+}
+
+.link_read-more {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.link_read-more:hover {
+    color: #317fb6;
+    transition: 0.2s;
+}
