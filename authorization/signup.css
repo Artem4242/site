@@ -59,9 +59,8 @@ body {
 }
 
 /* ---------------------------- */
-.section_main{
+.section_main{}
 
-}
 .section_mane_title{
     display: flex;
     justify-content: center;
@@ -103,6 +102,12 @@ label{
     color: #414141;
     padding-right: 10px;
 }
+
+.password_warning{
+    color: rgb(209, 0, 0);
+    transition: 1s;
+}
+
 .container_form_input{
     width: 277px;
     padding: 10px 20px;
@@ -135,9 +140,7 @@ hr{
     font-weight: 400;
     color: #414141;
 }
-.checkbox{
-    
-}
+
 #form_link{
     color: #3ED2F0;
     text-decoration: underline;
@@ -157,8 +160,10 @@ hr{
     font-weight: 200;
     letter-spacing: 0.7px;
     padding: 7px 16px;
+    cursor: pointer !important;
     background-color: white;
     border: 1px solid #333;
+
 }
 .btn_form:hover{
     color: white;

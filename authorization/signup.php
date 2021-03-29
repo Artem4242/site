@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="signup.css">
-    <title>Авторизация</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         <a href="../index.html"><img class="logo" src="../images/logo.jpg" alt="logo"></a>
         <ul class="header_list">
             <li>
-                <a class="header_list_item" href="#">television</a>
+                <a class="header_list_item" href="../television/television.html">television</a>
             </li>
             <li>
                 <a class="header_list_item" href="#">cameras</a>
@@ -38,18 +42,33 @@
         </ul>
         <div class="header_nav">
             <a class="header_nav_icon" href="#"><i class="fas fa-search"></i></a>
-            <a class="header_nav_icon" href="#"><i class="fas fa-user-circle"></i></a>
+            <a class="header_nav_icon" href="signin.php"><i class="fas fa-user-circle"></i></a>
             <a class="header_nav_icon" href="#"><i class="fas fa-shopping-basket"></i></a>
         </div>
     </div>
     <div class="section_main">
         <header class="section_mane_title">
-            <h1 class="heading">Log in to your account</h1>
+            <h1 class="heading">Create An Account </h1>
             <br>
         </header>
+
+
         <div class="container_form">
             <div class="form_box">
-                <form action="" method="POST">
+                <form action="sig.php" method="POST">
+                    <div class="container_form_string">
+                        <label>First name</label>
+                        <div>
+                            <input class="container_form_input" type="text" name="first_name">
+                        </div>
+
+                    </div>
+                    <div class="container_form_string">
+                        <label>Last name</label>
+                        <div>
+                            <input class="container_form_input" type="text" name="last_name">
+                        </div>
+                    </div>
                     <div class="container_form_string">
                         <label>Email</label>
                         <div>
@@ -59,22 +78,38 @@
                     <div class="container_form_string">
                         <label>Password</label>
                         <div>
+                            
+                            <!-- ПРОВЕРКА НА НАЛИЧИЕ ПАРОЛЯ -->
+                                <?php
+                                if (isset($_SESSION['message'])) {
+                                    echo '<div class="password_warning">' . $_SESSION['message'] . '</div>';
+                                }
+                                unset($_SESSION['message']);
+                                ?>
+                        
                             <input class="container_form_input" type="password" name="password">
                         </div>
                     </div>
-                    <div class="container_form_button">
-                        <button class="btn_form" type="submit">Вход</button>
-                    </div>
                     <hr>
-                    <div class="form_link_signup">
-                        <p>
-                            <a class="link_signup" href="signup.html">No account? Create one here</a>
-                        </p>
+                    <div class="container_form_checkbox">
+                        <div class="consent_form">
+                            <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                            <p>
+                                I agree to the terms and conditions and the privacy policy <a id="form_link" href="#">Read the terms and
+                                    conditions of use</a>
+                                .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container_form_button">
+                        <button class="btn_form" type="submit">Регистрация</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+
     <div class="row">
         <div class="newsletter">
             <h2 class="newsletter_title">
@@ -179,16 +214,16 @@
                     </div>
                     <ul class="footer_list">
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="#">Personal info </a>
+                            <a class="footer_list_item_link" href="signin.html">Personal info </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="#">Orders </a>
+                            <a class="footer_list_item_link" href="signin.html">Orders </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="#">Credit slips </a>
+                            <a class="footer_list_item_link" href="signin.html">Credit slips </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="#">Addresses </a>
+                            <a class="footer_list_item_link" href="signin.html">Addresses </a>
                         </li>
                     </ul>
                 </div>

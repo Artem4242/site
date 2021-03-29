@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    require_once 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="signup.css">
-    <title>Регистрация</title>
+    <title>Авторизация</title>
 </head>
 
 <body>
@@ -44,25 +48,12 @@
     </div>
     <div class="section_main">
         <header class="section_mane_title">
-            <h1 class="heading">Create An Account </h1>
+            <h1 class="heading">Log in to your account</h1>
             <br>
         </header>
         <div class="container_form">
             <div class="form_box">
-                <form action="" method="POST">
-                    <div class="container_form_string">
-                        <label>First name</label>
-                        <div>
-                            <input class="container_form_input" type="text" name="first_name">
-                        </div>
-
-                    </div>
-                    <div class="container_form_string">
-                        <label>Last name</label>
-                        <div>
-                            <input class="container_form_input" type="text" name="last_name">
-                        </div>
-                    </div>
+                <form action="authorization.php" method="POST">
                     <div class="container_form_string">
                         <label>Email</label>
                         <div>
@@ -75,25 +66,19 @@
                             <input class="container_form_input" type="password" name="password">
                         </div>
                     </div>
-                    <hr>
-                    <div class="container_form_checkbox">
-                        <div class="consent_form">
-                            <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                            <p>
-                                I agree to the terms and conditions and the privacy policy <a id="form_link" href="#">Read the terms and
-                                    conditions of use</a>
-                                .
-                            </p>
-                        </div>
-                    </div>
                     <div class="container_form_button">
-                        <button class="btn_form" type="submit">Регистрация</button>
+                        <button class="btn_form" type="submit">Вход</button>
+                    </div>
+                    <hr>
+                    <div class="form_link_signup">
+                        <p>
+                            <a class="link_signup" href="signup.php">No account? Create one here</a>
+                        </p>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="newsletter">
             <h2 class="newsletter_title">
@@ -198,16 +183,16 @@
                     </div>
                     <ul class="footer_list">
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="signin.html">Personal info </a>
+                            <a class="footer_list_item_link" href="#">Personal info </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="signin.html">Orders </a>
+                            <a class="footer_list_item_link" href="#">Orders </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="signin.html">Credit slips </a>
+                            <a class="footer_list_item_link" href="#">Credit slips </a>
                         </li>
                         <li class="footer_list_item">
-                            <a class="footer_list_item_link" href="signin.html">Addresses </a>
+                            <a class="footer_list_item_link" href="#">Addresses </a>
                         </li>
                     </ul>
                 </div>

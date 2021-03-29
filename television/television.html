@@ -13,7 +13,7 @@
     <title>Television</title>
 </head>
 <div class="header">
-    <a href="index.html"><img class="logo" src="../images/logo.jpg" alt="logo"></a>
+    <a href="../index.html"><img class="logo" src="../images/logo.jpg" alt="logo"></a>
     <ul class="header_list">
         <li>
             <a class="header_list_item" href="#">television</a>
@@ -36,118 +36,407 @@
     </ul>
     <div class="header_nav">
         <a class="header_nav_icon" href="#"><i class="fas fa-search"></i></a>
-        <a class="header_nav_icon" href="../authorization/signin.html"><i class="fas fa-user-circle"></i></a>
+        <a class="header_nav_icon" href="../authorization/signin.php"><i class="fas fa-user-circle"></i></a>
         <a class="header_nav_icon" href="#"><i class="fas fa-shopping-basket"></i></a>
     </div>
 </div>
 
 <body>
-    <section class="main">
+    <div class="container_main">
         <nav class="section_nav">
-
+            <ol class="section_nav_list">
+                <li>
+                    <a class="nav_list_item" href="../index.html">Home</a>
+                </li>
+                <li class="nav_list_item">/</li>
+                <li>
+                    <a class="nav_list_item" href="#">Television</a>
+                </li>
+            </ol>
         </nav>
-        <div class="container">
-            <div class="container_filter">
-                <div class="container_filter_box">
 
-                    <div class="filter">
-                        <h4 class="filter_title">Television</h4>
-                        <hr>
-                        <ul id="filter_list">
-                            <li class="filter_item">
-                                <a class="filter_item_link" href="#">consectetur adipiscing</a>
-                            </li>
-                            <li class="filter_item">
-                                <a class="filter_item_link" href="#">volutpat ac lorem</a>
-                            </li>
-                            <li class="filter_item">
-                                <a class="filter_item_link" href="#">varius vulputate</a>
-                            </li>
-                            <li class="filter_item">
-                                <a class="filter_item_link" href="#">adipiscing bibendum</a>
-                            </li>
-                        </ul>
+        <!-- ---------------------------------------------------------------- -->
+
+        <section class="main">
+            <div class="container">
+                <div class="container_filter">
+                    <div class="container_filter_box">
+
+                        <div class="filter">
+                            <h4 class="filter_title">Television</h4>
+                            <hr>
+                            <ul id="filter_list">
+                                <li class="filter_item">
+                                    <a class="filter_item_link" href="#">consectetur adipiscing</a>
+                                </li>
+                                <li class="filter_item">
+                                    <a class="filter_item_link" href="#">volutpat ac lorem</a>
+                                </li>
+                                <li class="filter_item">
+                                    <a class="filter_item_link" href="#">varius vulputate</a>
+                                </li>
+                                <li class="filter_item">
+                                    <a class="filter_item_link" href="#">adipiscing bibendum</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
+                    <div class="container_filter_box">
 
+                        <div class="filter">
+                            <h4 class="filter_title">Filter By</h4>
+                            <hr>
+                            <ul id="filter_list">
+                                <h2 class="filter_title_item">Categories</h2>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">consectetur adipiscing</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">volutpat ac lorem</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">varius vulputate</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">adipiscing bibendum</a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul id="filter_list">
+                                <h2 class="filter_title_item">Price</h2>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">$385.00 - $387.00 (1)</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#"> $528.00 - $530.00 (1) </a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#"> $629.00 - $631.00 (1) </a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#"> $663.00 - $746.00 (2) </a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">$928.00 - $930.00 (1)</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#"> $1,299.00 - $1,514.00 (2) </a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="radio" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#"> $1,623.00 - $1,826.00 (1) </a>
+                                </li>
+                            </ul>
+                            <h4 class="filter_title">Size</h4>
+                            <hr>
+                            <ul id="filter_list">
+                                <h2 class="filter_title_item">Categories</h2>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">S (2)</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">M (2)</a>
+                                </li>
+                                <li class="filter_item">
+                                    <input class="checkbox" type="checkbox" name="checkbox" value="1">
+                                    <a class="filter_item_link_categories" href="#">L (2)</a>
+                                </li>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="container_filter_box">
+            </div>
 
-                    <div class="filter">
-                        <h4 class="filter_title">Filter By</h4>
-                        <hr>
-                        <ul id="filter_list">
-                            <h2 class="filter_title_item">Categories</h2>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">consectetur adipiscing</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">volutpat ac lorem</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">varius vulputate</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">adipiscing bibendum</a>
-                            </li>
-                        </ul>
-                        <hr>
-                        <ul id="filter_list">
-                            <h2 class="filter_title_item">Price</h2>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">$385.00 - $387.00 (1)</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#"> $528.00 - $530.00 (1) </a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#"> $629.00 - $631.00 (1) </a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#"> $663.00 - $746.00 (2) </a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">$928.00 - $930.00 (1)</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#"> $1,299.00 - $1,514.00 (2) </a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="radio" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">  $1,623.00 - $1,826.00 (1)  </a>
-                            </li>
-                        </ul>
-                        <h4 class="filter_title">Size</h4>
-                        <hr>
-                        <ul id="filter_list">
-                            <h2 class="filter_title_item">Categories</h2>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">S (2)</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">M (2)</a>
-                            </li>
-                            <li class="filter_item">
-                                <input class="checkbox" type="checkbox" name="checkbox" value="1">
-                                <a class="filter_item_link_categories" href="#">L (2)</a>
-                            </li>
+            <!-- -------------------------------------------------------------------------- -->
+
+            <div class="container_products">
+                <div class="products">
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/hol.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Convenire Adversarium</h3>
+                        </div>
+                        <div class="price_card_with_characteristics">
+                            <strike>$829.00</strike>
+                            <span>-10%</span>
+                            <span class="price">$746.10</span>
+                        </div>
                     </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/convenire-adversarium.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Fermentum Turpis</h3>
+                        </div>
+                        <div class="price_card_with_characteristics">
+                            <strike>$929.00</strike>
+                            <span>-20%</span>
+                            <span class="price">$1,514.10</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/headphons.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Nunc Congue</h3>
+                        </div>
+                        <div class="price_card_with_characteristics">
+                            <strike>$,2078.00</strike>
+                            <span>-15%</span>
+                            <span class="price">$1,724.10</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/telev.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Vel Vulputate</h3>
+                            <p>$929.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/plan.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Indque Fuisset</h3>
+                            <p>$929.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/br.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Alterum Dissentiunt</h3>
+                        </div>
+                        <div class="price_card_with_characteristics">
+                            <strike>$829.00</strike>
+                            <span>-10%</span>
+                            <span class="price">$746.10</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                             <img class="img_card" src="../images/offers/photo.jpg" alt="">
+                            </a>
 
+                        <div class="price_card">
+                            <h3>Prima Ocurreret</h3>
+                            <p>$647.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="singlepage.php">
+                            <img class="img_card" src="../images/offers/tete.jpg" alt="">
+                        </a>
+                        <div class="price_card">
+                            <h3>Indque Fuisset</h3>
+                            <p>$929.00</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="products_list_string">
+                    <div class="products_list_text">Showing 1-8 of 9 item(s)</div>
+                    <div>
+                        <ul class="products_list">
+                            <li>
+                                <a class="products_list_item" href="">
+                                    < </a>
+                            </li>
+                            <li>
+                                <a class="products_list_item" href="#"> 1 </a>
+                            </li>
+                            <li>
+                                <a class="products_list_item" href=""> > </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </div>
+
+    <!-- --------------------------------------------------------------------------- -->
+    <div class="row">
+        <div class="newsletter">
+            <h2 class="newsletter_title">
+                <i class="fas fa-envelope-open"></i>
+                Newsletter
+            </h2>
+            <p class="newsletter_text">Get our latest news and special sales</p>
+            <div class="newsletter_form">
+                <form class="news_form" action="">
+                    <div>
+                        <input class="newsletter_input" name="email" type="text" value=""
+                            placeholder="Your email address">
+                    </div>
+                </form>
+                <button class="newsletter_btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------- -->
+
+    <div class="footer_icons">
+        <ul class="footer_icons">
+            <li class="footer_icons_li">
+                <a class="footer_icons_item" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="footer_icons_li">
+                <a class="footer_icons_item" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="footer_icons_li">
+                <a class="footer_icons_item" href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+            <li class="footer_icons_li">
+                <a class="footer_icons_item" href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li class="footer_icons_li">
+                <a class="footer_icons_item" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- --------------------------------------------------------------------------- -->
+    <div class="footer">
+        <div class="footer_content">
+            <div class="footer_products_footer_our-company">
+                <div class="footer_products">
+                    <div class="footer_title_string">
+                        <i class="fas fa-bars"></i>
+                        <h3 class="footer_title">Products</h3>
+                    </div>
+                    <ul class="footer_list">
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Prices drop</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">New products</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Best sales </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_products">
+                    <div class="footer_title_string">
+                        <i class="fas fa-bars"></i>
+                        <h3 class="footer_title">Our company</h3>
+                    </div>
+                    <ul class="footer_list">
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Terms and conditions of use</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">About us</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Secure payment</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Contact us</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Sitemap</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="#">Stores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_your-account_location">
+                <div class="footer_your-account">
+                    <div class="footer_title_string">
+                        <i class="fas fa-user-circle"></i>
+                        <h3 class="footer_title">Your account </h3>
+                    </div>
+                    <ul class="footer_list">
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="authorization/signin.html">Personal info </a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="authorization/signin.html">Orders </a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="authorization/signin.html">Credit slips </a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a class="footer_list_item_link" href="authorization/signin.html">Addresses </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_location">
+                    <div class="footer_title_string">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3 class="footer_title">Store information</h3>
+                    </div>
+                    <ul class="footer_list">
+                        <li class="footer_list_location">
+                            <div>
+                                Extra Electro
+                                <br>
+                                Wall Street 202
+                                <br>
+                                10-900 New York
+                                <br>
+                                Polska
+                            </div>
+                        </li>
+                        <li class="footer_list_location">
+                            <div class="footer_location_contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <br>
+                                Call us:
+                                <span class="footer_location_span">777-888-999</span>
+                            </div>
+                        </li>
+                        <li class="footer_list_location">
+                            <div class="footer_location_contact">
+                                <i class="fas fa-envelope"></i>
+                                <br>
+                                Email us:
+                                <span class="footer_location_span">sales@company.com</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="privacy_policy">
+            <p>© 2021 - Ecommerce software by PrestaShop™ </p>
+        </div>
+    </div>
 </body>
 
 </html>
